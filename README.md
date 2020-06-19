@@ -1,11 +1,23 @@
 # Colorization
+The paper [Colorful Image Colorization](https://arxiv.org/abs/1603.08511) implemented in Keras.
+
+## Dependencies
+
+* Tensorflow
+* Cv2
+* PIL
+* Matplotlib
+* Sklearn
+* Scipy
+* Tqdm
+
+| | | |
+|--|--|--|
+|![image](https://github.com/davidsvy/Colorization/raw/master/data/log_color_freqs.png)|![image](https://github.com/davidsvy/Colorization/raw/master/data/quantized_rgb.png)|![image](https://github.com/davidsvy/Colorization/raw/master/data/quantized_log_color_freqs.png)|
 
 
-
-Original | Output |
+|Original | Output |
 |--|--|
-
-
 |![image](https://github.com/davidsvy/Colorization/raw/master/imgs/1_1.png) | ![image](https://github.com/davidsvy/Colorization/raw/master/imgs/1_2.png)|
 |![image](https://github.com/davidsvy/Colorization/raw/master/imgs/2_1.png) | ![image](https://github.com/davidsvy/Colorization/raw/master/imgs/2_2.png)|
 |![image](https://github.com/davidsvy/Colorization/raw/master/imgs/3_1.png) | ![image](https://github.com/davidsvy/Colorization/raw/master/imgs/3_2.png)|
