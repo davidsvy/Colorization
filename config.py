@@ -1,0 +1,11 @@
+IMG_SHAPE = (128, 128)
+BATCH_SIZE = 16
+MAX_ABS_VALUE = 256
+TRAIN_PATH = r'dataset/train'
+TEST_PATH = r'dataset/test'
+MODEL_PATH = r'data/checkpoints/model_147_13_25_v7.h5'
+QUANTIZE_DIST = 13
+QUANTIZE_THRESHOLD = 0.25
+EPOCHS = 68
+Temp = 0.38
+patience = 3
