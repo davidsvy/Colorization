@@ -3,7 +3,7 @@
 
 
 Original | Output |
-|---|---|
+|--|--|
 
 
 |![image](https://github.com/davidsvy/Colorization/raw/master/imgs/1_1.png) | ![image](https://github.com/davidsvy/Colorization/raw/master/imgs/1_2.png)|
