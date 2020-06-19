@@ -92,19 +92,34 @@ def quantize_colors(dist, threshold):
     np.save('data/color_weights.npy', color_weights)
         
     plt.ioff()
-    plt.imsave('data/quantized_rgb.png', rgb_quantized)
+    #plt.imsave('data/quantized_rgb.png', rgb_quantized)
     
     plt.figure()
-    plt.axis('off')
+    plt.axis('on')
     plt.grid(False)
+    plt.title('$Quantized\ CIELAB\ color\ space$')
+    plt.xlabel('$b$')
+    plt.ylabel('$a$')
+    plt.imshow(rgb_quantized)
+    plt.savefig('data/quantized_rgb.png', bbox_inches="tight", transparent=False)
+    
+    plt.figure()
+    plt.axis('on')
+    plt.grid(False)
+    plt.title('$Log\ color\ frequencies$')
+    plt.xlabel('$b$')
+    plt.ylabel('$a$')
     plt.imshow(np.log(1 + color_freqs), cmap = 'plasma')
-    plt.savefig('data/log_color_freqs.png', bbox_inches="tight", transparent=True)
+    plt.savefig('data/log_color_freqs.png', bbox_inches="tight", transparent=False)
     
     plt.figure()
-    plt.axis('off')
+    plt.axis('on')
     plt.grid(False)
+    plt.title('$Quantized\ log\ color\\ frequencies$')
+    plt.xlabel('$b$')
+    plt.ylabel('$a$')
     plt.imshow(np.log(1 + color_freqs_quantified), cmap = 'plasma')
-    plt.savefig('data/quantized_log_color_freqs.png', bbox_inches="tight", transparent=True)
+    plt.savefig('data/quantized_log_color_freqs.png', bbox_inches="tight", transparent=False)
     
     
 
